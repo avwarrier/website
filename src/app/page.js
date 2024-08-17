@@ -156,7 +156,7 @@ export default function Home() {
             {
               languages.map((language) => {
                 return (
-                  <Skill item={language} />
+                  <Skill key={language.name} item={language} />
                 )
               })
             }
@@ -166,7 +166,7 @@ export default function Home() {
             {
               frameWorks.map((frameWork) => {
                 return (
-                  <Skill item={frameWork} />
+                  <Skill key={frameWork.name} item={frameWork} />
                 )
               })
             }
@@ -176,7 +176,7 @@ export default function Home() {
             {
               tools.map((tool) => {
                 return (
-                  <Skill item={tool} />
+                  <Skill key={tool.name} item={tool} />
                 )
               })
             }
