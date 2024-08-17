@@ -139,8 +139,8 @@ export default function Home() {
       <div className=" flex justify-center items-start w-[52vw] gap-[30px] mt-[20vh]">
           <Image className=" object-contain border-[4px] border-black rounded-xl shadow-md w-[20vw] hover:scale-[1.02] transition-all duration-200 ease-in-out" src={profile} alt="abhimanyu" />
           <div className=" mt-[10px]">
-            <p>Hey, I'm Abhimanyu, a passionate Computer Science student at UC Davis! I have lots of experience in fields of Computer Science including full-stack development, software engineering, web dev, machine learning, and AI.</p>
-            <p className="mt-[20px]">Outside of academics, I like to play many instruments including the Indian Carnatic Violin, Flute, Tenor Saxophone, and Bass Clarinet, and I also love working out, playing basketball, and hanging with friends!</p>
+            <p>{"Hey, I'm Abhimanyu, a passionate Computer Science student at UC Davis! I have lots of experience in fields of Computer Science including full-stack development, software engineering, web dev, machine learning, and AI."}</p>
+            <p className="mt-[20px]">{"Outside of academics, I like to play many instruments including the Indian Carnatic Violin, Flute, Tenor Saxophone, and Bass Clarinet, and I also love working out, playing basketball, and hanging with friends!"}</p>
             <a href="./resume.pdf" download="abhimanyu-warrier-resume.pdf" className={`cursor-pointer flex items-center justify-center hover:border-[2px] hover:border-black hover:bg-[#f5f0e6] text-[#f5f0e6] hover:text-black bg-black mt-[20px] w-[120px] h-[50px] rounded-md shadow-md gap-[5px] px-[10px]`}>
               <p className="">Resume</p>
               <CodeIcon className=""/>
