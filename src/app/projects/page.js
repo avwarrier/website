@@ -100,8 +100,8 @@ const Projects = () => {
     return (
         <div className="flex w-screen flex-wrap gap-[25px] overflow-x-hidden justify-center h-[90vh] pt-[2vh] pb-[3vh]">
             {
-              projects.map((project) => {
-                return <Project project={project} />
+              projects.map((project, index) => {
+                return <Project key={index} project={project} />
             })
             }
         </div>

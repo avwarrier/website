@@ -64,8 +64,8 @@ Developed frontend screens to display counterfeits and updated website using Sho
       </div>
       <div className='mt-[5vh] flex flex-col gap-[30px]'>
         {
-          experiences.map((experience) => (
-            <Experience experience={experience} />
+          experiences.map((experience, index) => (
+            <Experience key={index} experience={experience} />
           ))
         }
       </div>

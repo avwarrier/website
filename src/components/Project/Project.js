@@ -19,8 +19,8 @@ const Project = ({ project }) => {
                         project.links.length > 0 && <p className='text-[16px]'>|</p>
                     }
                     {
-                        project.links.map((link) => (
-                            <Link target='_blank' href={link.link}>
+                        project.links.map((link, index) => (
+                            <Link key={index} target='_blank' href={link.link}>
                                 <p className='text-[16px] underline text-[#1d426f]'>{`${link.name}`}</p>
                             </Link>
                         ))
