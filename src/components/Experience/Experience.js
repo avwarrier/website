@@ -5,7 +5,7 @@ const Experience = ({ experience }) => {
   return (
     <div className='flex items-start gap-[20px] w-[1000px]'>
         <div className='w-[150px] h-[200px]'>
-            <Image src={experience.logo} alt='company logo' className='rounded-md'/>
+            <Image src={experience.logo} alt='company logo' className='rounded-md hover:scale-[1.03] transition-all ease-in-out duration-100 shadow-md' />
         </div>
         <div className='flex flex-col justify-center'>
             <h2 className='font-semibold text-[28px]'>{`${experience.position} @ ${experience.company}`}</h2>

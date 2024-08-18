@@ -57,12 +57,12 @@ Developed frontend screens to display counterfeits and updated website using Sho
   return (
     <div className="flex w-screen justify-center h-[90vh] gap-[100px]">
       
-      <div className='mt-[12vh] flex flex-col items-center'>
+      <div className='mt-[10vh] flex flex-col items-center'>
         <div className='w-[20px] h-[20px] rounded-full border-[6px] border-black'></div>
         <div className='h-[400px] mt-[-4px] mb-[-4px] w-[6px] bg-black'></div>
         <div className='w-[20px] h-[20px] rounded-full border-[6px] border-black'></div>
       </div>
-      <div className='mt-[7vh] flex flex-col gap-[30px]'>
+      <div className='mt-[5vh] flex flex-col gap-[30px]'>
         {
           experiences.map((experience) => (
             <Experience experience={experience} />
