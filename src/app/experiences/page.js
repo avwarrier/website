@@ -1,6 +1,7 @@
 import React from 'react'
 import ibm_logo from '../../assets/ibm_logo.jpeg'
 import clocky_logo from '../../assets/toymail_co_logo.jpeg'
+import microsoft_logo from '../../assets/microsoft-logo.jpeg'
 import Experience from '@/components/Experience/Experience'
 
 const Experiences = () => {
@@ -19,6 +20,25 @@ Developed frontend screens to display counterfeits and updated website using Sho
 */
 
   const experiences = [
+    {
+      company: "Microsoft",
+      position: "Software Engineer Intern",
+      start: "June 2025",
+      end: "Sept 2025",
+      location: "Redmond, WA",
+      teamName: "Service 360",
+      description: [
+        "Created an AI description generation and validation service to security KPIs as part of Microsoft’s S360 security platform",
+        "Developed pipelines using C# and Dotnet framework to query internal engineering systems AI model and scraped data off of Microsoft’s internal engineering hub to generate high-quality descriptions",
+        "Empowered KPI owners to automatically summarize complex security initiatives and compile action items with detailed resolution steps within seconds",
+        "Wrote Kusto functions to pull action item data for individual KPIs, allowing the service to create accurate trouble shooting guides for devs",
+        "Engineered a validation service, evaluating existing descriptions and assigning scores based on structural validity and data accuracy for 10,000+ KPI owners",
+        "Significantly reduced developer hours and toil for 70,000+ software engineers/developers, impacting productivity and overall security compliance for Microsoft services"
+      ],
+      skills: "C#, Generative AI, API development, Azure Kusto, Security, Dotnet Framework",
+      color: "#0043ce",
+      logo: microsoft_logo,
+    },
     {
       company: "IBM",
       position: "Software Engineer Intern",
@@ -55,14 +75,8 @@ Developed frontend screens to display counterfeits and updated website using Sho
   ]
 
   return (
-    <div className="flex w-screen justify-center h-[90vh] gap-[100px]">
-      
-      <div className='mt-[10vh] flex flex-col items-center'>
-        <div className='w-[20px] h-[20px] rounded-full border-[6px] border-black'></div>
-        <div className='h-[400px] mt-[-4px] mb-[-4px] w-[6px] bg-black'></div>
-        <div className='w-[20px] h-[20px] rounded-full border-[6px] border-black'></div>
-      </div>
-      <div className='mt-[5vh] flex flex-col gap-[30px]'>
+    <div className="flex justify-center">
+      <div className='mt-[5vh] flex flex-col justify-start items-center gap-[50px] pb-[100px]'>
         {
           experiences.map((experience, index) => (
             <Experience key={index} experience={experience} />

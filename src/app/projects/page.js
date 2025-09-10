@@ -7,10 +7,49 @@ import project from '../../assets/project.jpg'
 import truckpedia from '../../assets/truckpedia.jpeg'
 import codelab from '../../assets/codelab.jpeg'
 import hackdavistwo from '../../assets/hackdavistwo.jpeg'
+import chevron from '../../assets/chevron.png'
 
 const Projects = () => {
 
     const projects = [
+        {
+            name: "Project Mentor/Developer @ Chevron",
+            start: "January 2025",
+            end: "June 2025",
+            description: [
+                "Built a distributed web scraping tool for the Chevron Energy Team that scrapes map data for any query filtered by the state, county, or city level (example “Amazon Warehouses in California)",
+                "Utilized rabbitMQ to build the scraper and used FastAPI to develop application routes and connect to the PostgreSQL database for job and location data",
+                "Developed scripts to seed the database with accurate location data and created filtering algorithms to pull zipcodes for any filtration level",
+                "Leveraged Next.js and component libraries such as Tanstack to implement a dashboard that allows for running, saving, and favoriting scraper jobs",
+            ],
+            skills: "Python, FastAPI, Next.js, Node, RabbitMQ, Azure, Docker, PostgreSQL",
+            links: [],
+            logo: chevron,
+          },
+          {
+            name: "HackDavis 2024 Winner (2nd place overall)",
+            start: "April 27",
+            end: "April 28",
+            description: [
+                "Created a full-stack mobile application called nomad that allows users to drop pins and create hotspots when they see a homeless person in need or a displaced animal in their everyday lives",
+                "Developed a fully functioning product using React Native, Google Firebase for Google authentication and the firestore database, and the Google Maps API",
+                "Utilized the Haversine formula to create an algorithm that finds the closest animal or homeless shelter to a dropped pin and used React Native Linking to draft an email automatically to that shelter",
+                "Implemented the Expo Reverse Geolocation API to automatically create the address of a pin",
+                "Used Firestore to track dropped pins and user data such as user drop numbers and made sure to implement real-time updates for all app users whenever a new drop gets posted"
+            ],
+            skills: "React Native, Javascript, HTML/CSS, Google Firebase, Firestore, Google Maps API, Reverse Geolocation",
+            links: [
+                {
+                    name: "github",
+                    link: "https://github.com/Yatsz/Nom.a.d."
+                },
+                {
+                    name: "figma",
+                    link: "https://www.figma.com/file/O01rTTxycF7Eo6uZTINcos/nom.a.d.-hack-davis-2024?type=design&mode=design&t=PytM9Z6k4ijeztxH-0"
+                }
+            ],
+            logo: hackdavis,
+          },
         {
             name: "HackDavis 2024 Winner (2nd place overall)",
             start: "April 27",
@@ -98,7 +137,7 @@ const Projects = () => {
     ]
 
     return (
-        <div className="flex w-screen flex-wrap gap-[25px] overflow-x-hidden justify-center h-[90vh] pt-[2vh] pb-[3vh]">
+        <div className="flex flex-wrap gap-[25px] justify-center h-[90vh] pt-[2vh]">
             {
               projects.map((project, index) => {
                 return <Project key={index} project={project} />

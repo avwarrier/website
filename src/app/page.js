@@ -1,6 +1,6 @@
 "use client"
 import Image from "next/image";
-import profile from '../assets/abhimanyu_image.png'
+import profile from '../assets/Abhimanyu_Warrier.jpg'
 import { saveAs } from "file-saver";
 import CodeIcon from '@mui/icons-material/Code';
 import Skill from "@/components/Skill/Skill";
@@ -25,12 +25,12 @@ export default function Home() {
       icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg",
     },
     {
-      name: "Javascript",
-      icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg",
+      name: "C#",
+      icon: "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bd/Logo_C_sharp.svg/1820px-Logo_C_sharp.svg.png",
     },
     {
-      name: "Dart",
-      icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/dart/dart-original.svg",
+      name: "Javascript",
+      icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg",
     },
     {
       name: "Typescript",
@@ -60,12 +60,12 @@ export default function Home() {
       icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg",
     },
     {
-      name: "Tailwind.css",
-      icon: "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Tailwind_CSS_Logo.svg/2048px-Tailwind_CSS_Logo.svg.png",
+      name: "Next.js",
+      icon: "https://cdn.worldvectorlogo.com/logos/next-js.svg",
     },
     {
-      name: "Flutter",
-      icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flutter/flutter-original.svg",
+      name: "FastAPI",
+      icon: "https://cdn.worldvectorlogo.com/logos/fastapi.svg",
     },
     {
       name: "Express.js",
@@ -91,7 +91,10 @@ export default function Home() {
       name: "Django",
       icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/django/django-plain.svg",
     },
-    
+    {
+      name: 'AI/ML',
+      icon: 'https://upload.wikimedia.org/wikipedia/commons/thumb/e/ef/ChatGPT-Logo.svg/768px-ChatGPT-Logo.svg.png'
+    }
   ]
   
 //Git - Jira - Google Cloud Platform - Expo - Notion - Algolia - MySQL - Docker - Jenkins
